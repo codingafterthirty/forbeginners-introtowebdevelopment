@@ -1,0 +1,473 @@
+/************************************************
+  MAIN CSS FILE: this is a comment
+************************************************/
+
+
+/************************************************
+  VARIABLES
+************************************************/
+:root {
+  --main-bg-color: #FFFFFF; 
+  --main-fg-color: #0054BD;
+  --main-lt-color: #dbe6f5;
+  --heading-color: #0054BD;
+  --text-color: #707070;
+  --link-color: #FFFFFF;
+  --link-hover-light: #83a9e2;
+  --sub-section-bg: #e7eef9;
+
+  --main-nav-height: 45px;
+
+  --herro-section-height: 65vh;
+}
+
+/************************************************
+  GLOBAL STYLING
+************************************************/
+/* This is also a comment */
+* { 
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: 'Ubuntu', sans-serif;
+  background-color: var(--main-bg-color);
+}
+
+a {
+  text-decoration: none;
+  color: var(--link-color);
+}
+
+ul {
+  list-style: none;
+}
+
+
+/************************************************
+  HELPER STYLING
+************************************************/
+.wrapper {
+  max-width: 980px;
+  margin: 0 auto;
+  height: 100%;
+}
+
+.flex-row {
+  display: flex;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-col-end {
+  align-items: flex-end;
+}
+
+.flex-col-center {
+  justify-content: center;
+}
+
+.flex-between {
+  justify-content: space-between;
+}
+
+.flex-center {
+  align-items: center;
+}
+
+.flex-end {
+  justify-content: flex-end;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.grid-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.cta-button {
+  display: block;
+  border: 3px solid var(--heading-color);
+  color: var(--heading-color);
+  padding: 0.5rem 1rem;
+  font-weight: bold;
+  transition: all 0.5s ease-in-out;
+}
+
+.cta-button:hover {
+  border-color: var(--main-bg-color);
+  color: var(--main-bg-color);
+  background: var(--heading-color);
+}
+
+/************************************************
+  STEP ICONS STYLING
+************************************************/
+
+.step-icon {
+  height: 175px;
+  width: 175px;
+  font-family: 'Raleway', sans-serif;
+  color: white;
+  font-size: 3rem;
+  background: blue;
+}
+/************************************************
+  HERO SECTION STYLING
+************************************************/
+.hero {
+  background: pink;
+  height: var(--herro-section-height);
+  background: url('./img/blue-ink.jpeg') left 4em bottom 1em no-repeat;
+  background-position: right 25% bottom 60% ;
+}
+
+.hero_call-to-action {
+  height: calc(100% - var(--main-nav-height));
+}
+
+.hero_call-to-action h2 {
+  color: var(--heading-color);
+  font-size: 2.2rem;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  margin-bottom: 3rem;
+  text-align: right;
+}
+
+.main-header {
+  height: var(--main-nav-height);
+  text-transform: uppercase;
+
+  /* position: fixed;
+  z-index: 1;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: var(--main-bg-color); */
+}
+
+.main-header__text {
+  color: var(--heading-color);
+}
+
+.main-header__sub-text {
+  color: var(--text-color);
+}
+
+.main-header__nav-items {
+  height: 100%;
+}
+
+.main-header__nav-item {
+  margin-left: 1rem;
+  font-size: 1.2rem;
+  font-weight: 300;
+  height: var(--main-nav-height);
+  line-height: var(--main-nav-height);
+}
+
+.main-header__nav-item a {
+  display: block;
+  color: var(--text-color);
+
+}
+
+.main-header__nav-item a:hover {
+  color: var(--heading-color);
+}
+
+.main-header__nav-item:hover {
+  margin-top: 0px;
+  border-bottom: 4px var(--heading-color) solid;
+  transition: all 0.5s ease-in-out;
+}
+
+
+/************************************************
+  MAIN SECTION STYLING
+************************************************/
+.main-section__column {
+  position: relative;
+}
+
+.main-section__circle {
+  position: absolute;
+  width: 150px; 
+  height: 150px;
+  background: var(--heading-color);
+  color: var(--main-bg-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  border: solid 4px var(--main-bg-color);
+  left: calc(50% - 75px);
+  top: -75px;
+}
+
+.icons {
+  font-size: 5rem;;
+}
+    
+.main-section__column-content {
+  padding: 5.5rem 1.2rem 4rem 1.2rem;
+  /* background: red; */
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.main-section__heading {
+  color: var(--heading-color);
+  font-size: 1.6rem;
+  margin-bottom: 0.8rem;
+
+}
+
+.main-section__text {
+  color: var(--text-color);
+  font-size: 1.4rem;
+}
+
+/************************************************
+  SUB SECTION STYLING
+************************************************/
+.sub-section {
+  position: relative;
+  min-height: 100vh;
+  background: var(--sub-section-bg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sub-section-header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 0.5rem;
+  padding: 0.5 1rem;
+  font-size: 1.8rem;
+  text-align: center;
+  background: var(--main-fg-color);
+  color: var(--main-bg-color);
+}
+
+.sub-section-grid {
+  display: grid;
+  grid-gap: 2rem;
+  grid-template-areas: 
+  "image-1 section-1 section-1"
+  "section-2 section-2 image-2"
+  "image-3 section-3 section-3"
+  ;
+  margin-top: 65px;
+}
+
+.sub-section__heading {
+  color: var(--main-fg-color);
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+}
+
+.sub-section__text {
+  color: var(--text-color);
+  font-size: 1.2rem;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
+.image {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.image::after {
+    content:""; 
+    top:0;
+    left: 0;
+    background-color: var(--main-fg-color);
+    border-radius: 5px;
+    opacity: 0.2;
+    height: 100%; /*dimension of the shape*/
+    position: absolute;
+    width: 100%; /*dimension of the shape*/
+}
+
+.image img {
+  display: block;
+  object-fit: cover;
+  border-radius: 5px;
+  height: 100%;
+  width: 100%;
+}
+
+.image-area-1 {
+  grid-area: image-1;
+}
+
+.image-area-2 {
+  grid-area: image-2;
+}
+
+
+.section-area-1 {
+  grid-area: section-1;
+}
+
+.section-area-2 {
+  grid-area: section-2;
+}
+
+
+
+/************************************************
+  CALL TO ACTION STYLING
+************************************************/
+.cta-section {
+  background: var(--main-lt-color);
+  padding: 1rem;
+}
+
+.cta-section__column {
+  margin: 1rem;
+  color: var(--main-fg-color);
+}
+
+.column-1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  background: #66a3f6;
+  color: var(--link-color);
+  font-size: 1.6rem;
+  border-radius: 5px;
+
+}
+
+.column-1 img {
+  height: 125px;
+  width: 125px;
+  display: block;
+  border-radius: 50%;
+  border: 4px solid var(--link-color);
+  margin-bottom: 1rem;
+}
+
+.column-1 blockquote {
+  margin-bottom: 1rem;
+  text-align: center;
+
+}
+
+.column-1 p {
+  font-size: 1.2rem;
+}
+/************************************************
+  FORM STYLING
+************************************************/
+.form {
+  padding: 1rem;
+  background: var(--main-bg-color);
+  border-radius: 5px;
+}
+
+.form h2 {
+
+  background: #66a3f6;
+  color: white;
+  padding: 0.5rem;
+  border-radius: 3px;
+  margin-bottom: 1rem;
+}
+
+.form label,
+.form input {
+  display: block;
+  width: 100%;
+}
+
+.form label {
+  margin-bottom: 4px;
+  color: #9fc4f7;
+  font-weight: bold;
+}
+
+.form input {
+  padding: 0.5rem 1rem;
+  border: 2px solid #e4e6e9;
+  border-radius: 3px;
+  margin-bottom: 1rem;
+  color: #608fd5;
+  font-size: 1.4rem;
+}
+
+.form input::placeholder {
+  color: lightgray;
+}
+
+button.submit-button {
+  background:  #66a3f6;
+  transition: all 0.3s ease-in-out;
+  border: none;
+  display: block;
+  width: 100%;
+  color: var(--link-color);
+  padding: 0.5rem 1rem;
+  border-radius: 3px;
+  font-size: 1.4rem;
+}
+
+button.submit-button:hover {
+  background: var(--main-fg-color);
+}
+
+
+/************************************************
+  FOOTER STYLING
+************************************************/
+.main-footer {
+  background: var(--main-fg-color);
+  color: var(--link-color);
+  font-size: 1.2rem;
+  padding: 1rem;
+  text-transform: uppercase;
+}
+
+
+
+
+
+.main-footer nav li,
+.main-footer div i {
+  margin-left: 1rem;
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+
+.main-footer div i {
+  font-size: 1.8rem;
+}
+
+.main-footer li a:hover,
+.main-footer a:hover{
+  transition: all 0.5s ease-in-out;
+  color: var(--link-hover-light);
+}

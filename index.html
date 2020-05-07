@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Intro to CSS, HTML and Javasript</title>
+  <!-- This is a HTML Commment -->
+  <!-- This is our Google Fonts Link -->
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500&display=swap" rel="stylesheet">
+  <!-- This is our Stylesheet Link to style.css -->
+  <link rel="stylesheet" href="style.css">
+  <!-- This is our Font Awesome Link  -->
+  <script src="https://kit.fontawesome.com/b439301c53.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <!-- Hero Section & Header Start -->
+  <section id="top" class="hero">
+    <header class="main-header">
+      <div class="wrapper flex-row flex-center flex-between">
+        <div class="main-header__logo">
+          <h1 class="main-header__text">Coding<span class="main-header__sub-text"> / Thirty</span></h1>
+        </div>
+
+        <nav class="main-header__nav">
+          <ul class="main-header__nav-items flex-row">
+            <li class="main-header__nav-item"><a href="#top">Home</a></li>
+            <li class="main-header__nav-item"><a href="#about">About</a></li>
+            <li class="main-header__nav-item"><a href="#signup">Sign Up</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <div class="hero_call-to-action">
+      <div class="wrapper flex-col flex-col-end flex-col-center">
+        <h2>Intro to html css & javasript</h2>
+        <a class="cta-button" href="#about">Learn More</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Main Section Start -->
+  <section class="main-section">
+    <div class="wrapper flex-row flex-center flex-between">
+      <div class="main-section__column">
+        <div class="main-section__circle">
+          <i class="icons fab fa-html5"></i>
+        </div>
+        <div class="main-section__column-content">
+          <h2 class="main-section__heading">HTML</h2>
+          <p class="main-section__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam convallis.</p>
+        </div>
+      </div>
+
+      <div class="main-section__column">
+        <div class="main-section__circle">
+          <i class="icons fab fa-css3"></i>
+        </div>
+        <div class="main-section__column-content">
+          <h2 class="main-section__heading">CSS</h2>
+          <p class="main-section__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam convallis.</p>
+        </div>
+      </div>
+
+      <div class="main-section__column">
+        <div class="main-section__circle">
+          <i class="icons fab fa-js-square"></i>
+        </div>
+        <div class="main-section__column-content">
+          <h2 class="main-section__heading">JAVASCRIPT</h2>
+          <p class="main-section__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam convallis.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sub Section Start -->
+  <section id="about" class="sub-section">
+    <div class="sub-section-header">
+      <h2>About The Course</h2>
+    </div>
+
+    <div class="wrapper sub-section-grid">
+      <div class="sub-section__column image image-area-1">
+        <img src="/img/why.jpg" alt="People studying." />
+      </div>
+
+      <div class="sub-section__column section section-area-1">
+        <h2 class="sub-section__heading">Why you should take this course?</h2>
+        <p class="sub-section__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris pretium semper
+          consequat. Ut nibh lorem, porta vel dapibus in, lobortis vitae augue. Ut imperdiet tempor nisl ut lobortis.
+          Aenean vitae sem egestas, pulvinar erat id, dictum nulla. Ut tincidunt magna felis, sodales eleifend nisi
+          consequat eget. Pellentesque sed eros id justo convallis scelerisque. Nam consequat felis at tempor
+          ullamcorper.</p>
+      </div>
+
+      <div class="sub-section__column section section-area-2">
+        <h2 class="sub-section__heading">What you can expect?</h2>
+        <p class="sub-section__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris pretium semper
+          consequat. Ut nibh lorem, porta vel dapibus in, lobortis vitae augue. Ut imperdiet tempor nisl ut lobortis.
+          Aenean vitae sem egestas, pulvinar erat id, dictum nulla. Ut tincidunt magna felis, sodales eleifend nisi
+          consequat eget. Pellentesque sed eros id justo convallis scelerisque. Nam consequat felis at tempor
+          ullamcorper.</p>
+      </div>
+      <div class="sub-section__column image image-area-2">
+        <img src="/img/what.jpg" alt="Some cute kittens." />
+      </div>
+    </div>
+  </section>
+
+
+  <!-- CTA and Form Section Start -->
+  <section id="signup" class="cta-section">
+    <div class="wrapper grid-row">
+      <!-- CTA -->
+      <div class="cta-section__column column-1">
+        <img src="https://placekitten.com/450/450" >
+        <blockquote>"I really enjoyed class. Paul is really nice"</blockquote>
+        <p>Mr.Sparkles</p>
+      </div>
+
+      <!-- Form -->
+      <div class="cta-section__column column-2">
+        <form class="form">
+          <h2>Sign Up Below To Join!</h2>
+          <div class="input-group">
+            <label for="name">Name:</label>
+            <input type="text" name="name" id="name" placeholder="Enter name...">
+          </div>
+          <div class="input-group">
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" placeholder="Enter email...">
+          </div>
+          <button class="submit-button" type="submit">Sign Up Today</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer Section Start -->
+  <footer class="main-footer">
+    <div class="wrapper flex-row flex-between">
+      <div>
+        <h3>Coding / Thirty</h1>
+      </div>
+      <div>
+        <a href="#top"><i class="fab fa-instagram-square"></i></a>
+        <a href="#top"><i class="fab fa-youtube-square"></i></a>
+        <a href="#top"><i class="fab fa-facebook-square"></i></a>
+      </div>
+      <nav>
+        <ul class="main-footer__nav-items flex-row">
+          <li class="main-footer__nav-item"><a href="#top">Home</a></li>
+          <li class="main-footer__nav-item"><a href="#about">About</a></li>
+          <li class="main-footer__nav-item"><a href="#signup">Sign Up</a></li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
+</body>
+
+</html>
+
+<!-- https://placekitten.com/450/450 -->
